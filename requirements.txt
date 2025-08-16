@@ -1,0 +1,2 @@
+# Runtime dependencies (keep minimal). Add Pillow or others as needed.
+

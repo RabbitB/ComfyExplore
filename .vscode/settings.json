@@ -1,0 +1,8 @@
+{
+        "python.defaultInterpreterPath": ".venv/bin/python",
+        "python.testing.pytestEnabled": true,
+        "python.testing.unittestEnabled": false,
+        "python.testing.pytestPath": ".venv/bin/pytest",
+        "python.analysis.extraPaths": ["${workspaceFolder}"],
+        "python.terminal.activateEnvironment": true
+}

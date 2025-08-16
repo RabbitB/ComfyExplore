@@ -1,0 +1,11 @@
+# Example .envrc for ComfyExplore
+# Activates a project-local venv if present.
+
+if [ -f .venv/bin/activate ]; then
+  source .venv/bin/activate
+fi
+
+# Optional: set project-specific environment variables
+# export COMFYEXPLORE_SAMPLES=./samples
+
+# End of example
