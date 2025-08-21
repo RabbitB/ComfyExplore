@@ -1,4 +1,3 @@
-from .cli import main
+from .main import comfy_explore_main
 
-if __name__ == "__main__":
-    main()
+comfy_explore_main()
