@@ -4,6 +4,8 @@ version = "0.1.0"
 description = "Tools to explore and manipulate images from ComfyUI/SwarmUI"
 readme = "README.md"
 requires-python = ">=3.9"
+[tool.setuptools]
+packages = ["comfy_explore"]
 
 [project.optional-dependencies]
 dev = ["pytest"]
