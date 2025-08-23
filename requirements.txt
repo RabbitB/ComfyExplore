@@ -1,2 +1,3 @@
-# Runtime dependencies (keep minimal). Add Pillow or others as needed.
+blessed>=1.19.0
+platformdirs>=3.0.0
 
