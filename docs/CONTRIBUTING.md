@@ -35,3 +35,18 @@ Pull requests
 - Target `main` branch.
 - Include tests and short changelog entry.
 - Ensure new code has type hints where helpful.
+
+Launching in an external terminal (Konsole example)
+
+If you want to run the program in an external terminal (e.g., Konsole), create a script like this (do not track it in git):
+
+```bash
+#!/bin/bash
+konsole --hold -e zsh -c "
+    cd \"$(dirname \"$0\")\"
+    source .venv/bin/activate
+    python -m comfy_explore
+"
+```
+
+Add this script to your `.gitignore` as it is machine-specific.

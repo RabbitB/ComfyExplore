@@ -1,28 +1,39 @@
-ComfyExplore — Features
+# ComfyExplore — Features
 
-Core (v0.1)
+### Legacy Bash Script Features
 
-- List sample images (directory)
-- Count sample images
-- Identify image file types
-- Simple summary (first N files)
+- Interactive batch triage for AI-generated images
+- Handles "final" images in current directory and "full-size" images in ./full_size
+- Retain, trash, and view images
+- Batch selection: choose how many images per batch and which batch to process
+- Labeling system for images (numeric and alphabetic)
+- Commands for viewing images, viewing metadata, refreshing, emptying trash, and quitting
+- Metadata extraction (EXIF, PNG chunks, JSON blobs)
+- Retained and trashed images are moved to dedicated folders
+- Trash can be emptied (with system trash integration if available)
+- Image viewing via various tools (display, kitty, viu, xdg-open, etc.)
+- Metadata viewing and saving (parameters, workflow, raw JSON)
+- Directory setup for retained, trashed, and metadata files
+- Error handling and user prompts for all major actions
 
-Planned (v0.2)
+---
+### Intended Features
 
-- Recursive discovery of images
-- Thumbnail generation and cache
-- Filename parsing for ComfyUI metadata (prompt, model, seed)
-- Export selected files to structured folders
+- Retain, archive, or delete images
+- Trash management (empty, restore)
+- View images (inline or external)
+- View and expand image metadata
+- Project selection and management
 
-Nice-to-have (v0.3+)
+---
+### Migration/Change Log
 
-- Tagging and lightweight metadata store (JSON sidecars)
-- Search/filter by parsed metadata (model, seed, prompt keywords)
-- Small web UI for browsing samples
-- Integration with image libs (Pillow) for basic transforms
+- [To Review] For each legacy feature, decide: Keep, Change, Drop, or Improve
+- [To Do] Update this section as features are ported, changed, or improved in Python
 
-Developer quality-of-life
+---
+### Developer quality-of-life
 
 - pytest-based test suite
 - CLI with subcommands
-- Well-documented code and examples
+- Well-documented code
